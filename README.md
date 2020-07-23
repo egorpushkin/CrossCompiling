@@ -45,9 +45,7 @@ denominator approach was used for selecting language features to be supported by
 
 Platform-specific features and APIs are hidden by OS abstraction layer. Library remain functional if some features are not supported by a particular OS. Runtime detection is exposed by OSAL layer whenever necessary. 
 
-<div align="center">
-  <img width="75%" src="https://docs.google.com/drawings/d/1fGkXpYYSfgl9f0CvDgKKU09_5tMYpf4A7BIFXVSOXWo/pub?w=971&h=492">
-</div>
+![Libbrary Structure](./images/cc-library-structure.png)
 
 ## Memory Model
 
@@ -63,9 +61,7 @@ Another important aspect of any object oriented system is inheritance model. Sin
 
 This is an example diagram illustrating the use of the model:
 
-<div align="center">
-  <img width="50%" src="https://docs.google.com/drawings/d/1JgSL_3YvsBdmeaRQMjplvU3ocK6C38lVR83Gp_-jAOg/pub?w=932&h=378">
-</div>
+![Libbrary Structure](./images/cc-inheritance.png)
 
 `Common<T>` helper was introduced to avoid implementing `ICommon` methods in all classes on the system. It only exists in C++ and is not translated to Java/C# where classes implement interfaces directly. 
 
